@@ -1,0 +1,206 @@
+:root {
+    --bg-dark: #12131a;
+    --bg-card: #1c1d26;
+    --border-color: #2a2b36;
+    --text-muted: #8a8c99;
+    --color-red: #ff3b30;
+    --color-blu: #007aff;
+    --color-grn: #34c759;
+    --color-yel: #ffcc00;
+    --color-pur: #af52de;
+    --color-lgt: #ffffff;
+    --color-drk: #5856d6;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 60px;
+}
+
+/* Banner de fondo personalizado con la imagen enviada */
+.legends-banner {
+    background-image: url('https://ibb.co');
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.banner-overlay {
+    background: linear-gradient(180deg, rgba(18,19,26,0.5) 0%, rgba(18,19,26,0.95) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+.filter-section {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.filter-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.btn-type {
+    border: 2px solid transparent;
+    font-weight: bold;
+    color: #000;
+    min-width: 70px;
+    transition: all 0.2s ease;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
+.btn-type-all { background-color: #444; color: #fff; }
+.btn-type-red { background-color: var(--color-red); color: #fff; }
+.btn-type-blu { background-color: var(--color-blu); color: #fff; }
+.btn-type-grn { background-color: var(--color-grn); color: #fff; }
+.btn-type-yel { background-color: var(--color-yel); color: #000; text-shadow: none; }
+.btn-type-pur { background-color: var(--color-pur); color: #fff; }
+.btn-type-lgt { background-color: var(--color-lgt); color: #000; text-shadow: none; }
+.btn-type-drk { background-color: var(--color-drk); color: #fff; }
+
+.btn-type.active, .btn-type:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.4);
+    transform: scale(1.05);
+}
+
+.btn-rarity {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid var(--border-color);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    transition: all 0.2s;
+}
+.btn-rarity.active, .btn-rarity:hover {
+    background-color: #ffffff;
+    color: var(--bg-dark);
+    border-color: #ffffff;
+}
+
+.character-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+}
+.character-card:hover {
+    transform: translateY(-5px);
+    border-color: #555766;
+}
+.card-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+/* Estilo para los logos oficiales de rareza */
+.img-rarity-badge {
+    height: 18px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Estilo para las esferas de elemento de color */
+.img-element-badge {
+    height: 22px;
+    width: auto;
+    object-fit: contain;
+}
+
+.badge-rarity-text {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: #2e303d;
+    text-transform: uppercase;
+}
+
+.badge-special {
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.character-id {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-family: monospace;
+}
+
+.color-indicator {
+    width: 8px;
+    height: auto;
+}
+
+select.form-select option {
+    background-color: var(--bg-card) !important;
+    color: #ffffff !important;
+}
+
+.modal-content-custom {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+
+.btn-borrar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: 1px solid #dc3545;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-borrar:hover {
+    background-color: #b02a37;
+    border-color: #b02a37;
+    color: #ffffff;
+}
+
+.btn-borrar i {
+    font-size: 12px;
+}
